@@ -1,24 +1,240 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C7M-fJ-hut">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Snack View Controller-->
+        <scene sceneID="lOk-0x-zo4">
+            <objects>
+                <viewController id="hr3-Id-gKp" customClass="SnackViewController" customModule="Project_1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ih4-nk-Uli">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SpeedyGozo.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="fGB-Ag-U8V">
+                                <rect key="frame" x="16" y="119" width="361" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DOj-rC-Qr9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0LZ-lW-rzU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgi-I9-q5b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="994" y="-745"/>
+        </scene>
+        <!--Speedy Gonzales-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpeedyGozo.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Teg-xe-EAD">
+                                <rect key="frame" x="16" y="119" width="361" height="299"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="s7Z-yp-xxz" userLabel="From Stack View">
+                                <rect key="frame" x="68" y="438" width="257" height="62"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fwl-Tn-s5H">
+                                        <rect key="frame" x="0.0" y="0.0" width="257" height="62"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where he is from!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wP5-eD-d6o">
+                                                <rect key="frame" x="61.333333333333357" y="20" width="134.66666666666663" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="wP5-eD-d6o" firstAttribute="top" secondItem="fwl-Tn-s5H" secondAttribute="top" constant="20" id="7Pw-9q-4Db"/>
+                                            <constraint firstItem="wP5-eD-d6o" firstAttribute="centerX" secondItem="fwl-Tn-s5H" secondAttribute="centerX" id="bvk-op-mgL"/>
+                                            <constraint firstItem="wP5-eD-d6o" firstAttribute="centerY" secondItem="fwl-Tn-s5H" secondAttribute="centerY" id="uPj-9g-AYL"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="e8M-1g-luK" appends="YES" id="LNV-Kv-M9S"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ge1-KM-EVO" userLabel="Fast Stack View">
+                                <rect key="frame" x="68" y="520" width="257" height="62"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNk-2y-zGc">
+                                        <rect key="frame" x="0.0" y="0.0" width="257" height="62"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How fast is he?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASQ-uT-e5s">
+                                                <rect key="frame" x="61.333333333333329" y="20" width="134.33333333333337" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="ASQ-uT-e5s" firstAttribute="centerX" secondItem="UNk-2y-zGc" secondAttribute="centerX" id="0HK-T3-lsq"/>
+                                            <constraint firstItem="ASQ-uT-e5s" firstAttribute="top" secondItem="UNk-2y-zGc" secondAttribute="top" constant="20" id="5Mk-rv-UIw"/>
+                                            <constraint firstItem="ASQ-uT-e5s" firstAttribute="leading" secondItem="UNk-2y-zGc" secondAttribute="leading" constant="61.333333333333371" id="Jas-fk-TMb"/>
+                                            <constraint firstItem="ASQ-uT-e5s" firstAttribute="centerY" secondItem="UNk-2y-zGc" secondAttribute="centerY" id="PyG-2t-mxo"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="BfB-1h-kEZ" appends="YES" id="G4J-zF-ZcZ"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9sK-lg-omT" userLabel="Fast Stack View">
+                                <rect key="frame" x="68" y="603" width="257" height="62"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bnh-VO-NPG">
+                                        <rect key="frame" x="0.0" y="0.0" width="257" height="62"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite snack?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X69-Sd-lsN">
+                                                <rect key="frame" x="61.333333333333329" y="20" width="134.33333333333337" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="X69-Sd-lsN" firstAttribute="top" secondItem="bnh-VO-NPG" secondAttribute="top" constant="20" id="RW5-Dd-i1V"/>
+                                            <constraint firstItem="X69-Sd-lsN" firstAttribute="centerX" secondItem="bnh-VO-NPG" secondAttribute="centerX" id="mvT-xU-qwf"/>
+                                            <constraint firstItem="X69-Sd-lsN" firstAttribute="leading" secondItem="bnh-VO-NPG" secondAttribute="leading" constant="61.333333333333371" id="n8J-QN-yPx"/>
+                                            <constraint firstItem="X69-Sd-lsN" firstAttribute="centerY" secondItem="bnh-VO-NPG" secondAttribute="centerY" id="yYx-hK-YJJ"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="5DW-SC-NXd" appends="YES" id="rJB-m9-lhL"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ge1-KM-EVO" firstAttribute="top" secondItem="s7Z-yp-xxz" secondAttribute="bottom" constant="20" id="1pH-A1-xmd"/>
+                            <constraint firstItem="Ge1-KM-EVO" firstAttribute="leading" secondItem="s7Z-yp-xxz" secondAttribute="leading" id="2eX-lu-1an"/>
+                            <constraint firstItem="s7Z-yp-xxz" firstAttribute="top" secondItem="Teg-xe-EAD" secondAttribute="bottom" constant="20" id="6Fn-ov-bvC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Teg-xe-EAD" secondAttribute="bottom" constant="400" id="95m-fy-Atb"/>
+                            <constraint firstItem="Teg-xe-EAD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="BX8-DY-4vC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9sK-lg-omT" secondAttribute="bottom" constant="153" id="GjK-So-I4q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Teg-xe-EAD" secondAttribute="trailing" constant="16" id="IVg-yH-6Oo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s7Z-yp-xxz" secondAttribute="bottom" constant="318" id="WJu-6h-HB3"/>
+                            <constraint firstItem="9sK-lg-omT" firstAttribute="leading" secondItem="Ge1-KM-EVO" secondAttribute="leading" id="Yt5-kL-bRw"/>
+                            <constraint firstItem="s7Z-yp-xxz" firstAttribute="top" secondItem="Teg-xe-EAD" secondAttribute="bottom" constant="20" id="bLo-dq-vnF"/>
+                            <constraint firstItem="s7Z-yp-xxz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="crf-yv-OVE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ge1-KM-EVO" secondAttribute="bottom" constant="236" id="grb-b9-cnS"/>
+                            <constraint firstItem="9sK-lg-omT" firstAttribute="trailing" secondItem="Ge1-KM-EVO" secondAttribute="trailing" id="iMN-V2-UJP"/>
+                            <constraint firstItem="Ge1-KM-EVO" firstAttribute="centerX" secondItem="s7Z-yp-xxz" secondAttribute="centerX" id="jEb-q0-bmr"/>
+                            <constraint firstItem="9sK-lg-omT" firstAttribute="top" secondItem="Ge1-KM-EVO" secondAttribute="bottom" constant="21" id="lj3-dq-MPh"/>
+                            <constraint firstItem="Teg-xe-EAD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oPt-c8-zdZ"/>
+                            <constraint firstItem="s7Z-yp-xxz" firstAttribute="centerX" secondItem="Teg-xe-EAD" secondAttribute="centerX" id="tJU-v8-8ls"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Speedy Gonzales" id="FA2-cg-eIG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="e8M-1g-luK">
+                    <connections>
+                        <segue destination="Nze-RN-JDm" kind="show" id="clf-Em-eZx"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="BfB-1h-kEZ">
+                    <connections>
+                        <segue destination="dRV-VQ-cYZ" kind="show" id="ovb-ab-9GT"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="5DW-SC-NXd">
+                    <connections>
+                        <segue destination="hr3-Id-gKp" kind="show" id="E6c-G4-MWu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+        </scene>
+        <!--Fast View Controller-->
+        <scene sceneID="ELP-JT-qvT">
+            <objects>
+                <viewController id="dRV-VQ-cYZ" customClass="FastViewController" customModule="Project_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6xl-gy-mdm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SpeedyGozo.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="zuL-We-0rf">
+                                <rect key="frame" x="16" y="119" width="361" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Dp-hd-J5I"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tgw-i7-nWO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MmJ-ME-uGm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976" y="690"/>
+        </scene>
+        <!--From View Controller-->
+        <scene sceneID="3jo-ll-Plk">
+            <objects>
+                <viewController id="Nze-RN-JDm" customClass="FromViewController" customModule="Project_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ws3-N6-Xd2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SpeedyGozo.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="ikx-9r-glU">
+                                <rect key="frame" x="16" y="119" width="361" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6aM-SJ-UJO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vUu-Dy-Eh4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9JF-v2-IJC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1747.3282442748091" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QSt-Q6-Bb5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C7M-fJ-hut" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nNs-yR-VCp">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="21R-hB-gQc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Swx-DP-dbH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SpeedyGozo.jpeg" width="251" height="201"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

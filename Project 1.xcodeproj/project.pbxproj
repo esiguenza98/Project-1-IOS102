@@ -16,6 +16,10 @@
 		0EC6AA40298F527F007AF204 /* Project_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC6AA3F298F527F007AF204 /* Project_1Tests.swift */; };
 		0EC6AA4A298F527F007AF204 /* Project_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC6AA49298F527F007AF204 /* Project_1UITests.swift */; };
 		0EC6AA4C298F527F007AF204 /* Project_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC6AA4B298F527F007AF204 /* Project_1UITestsLaunchTests.swift */; };
+		0EC6AAA429900025007AF204 /* SpeedyGozo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0EC6AAA329900025007AF204 /* SpeedyGozo.jpeg */; };
+		0EC6AAA7299001B7007AF204 /* FromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC6AAA5299001B1007AF204 /* FromViewController.swift */; };
+		0EC6AAAA29900547007AF204 /* FastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC6AAA82990052C007AF204 /* FastViewController.swift */; };
+		0EC6AAB029900B96007AF204 /* SnackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC6AAAE29900B8F007AF204 /* SnackViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		0EC6AA45298F527F007AF204 /* Project 1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project 1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EC6AA49298F527F007AF204 /* Project_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_1UITests.swift; sourceTree = "<group>"; };
 		0EC6AA4B298F527F007AF204 /* Project_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0EC6AAA329900025007AF204 /* SpeedyGozo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SpeedyGozo.jpeg; path = ../../../Downloads/SpeedyGozo.jpeg; sourceTree = "<group>"; };
+		0EC6AAA5299001B1007AF204 /* FromViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromViewController.swift; sourceTree = "<group>"; };
+		0EC6AAA82990052C007AF204 /* FastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastViewController.swift; sourceTree = "<group>"; };
+		0EC6AAAE29900B8F007AF204 /* SnackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,9 @@
 				0EC6AA28298F527B007AF204 /* AppDelegate.swift */,
 				0EC6AA2A298F527B007AF204 /* SceneDelegate.swift */,
 				0EC6AA2C298F527B007AF204 /* ViewController.swift */,
+				0EC6AAA5299001B1007AF204 /* FromViewController.swift */,
+				0EC6AAA82990052C007AF204 /* FastViewController.swift */,
+				0EC6AAAE29900B8F007AF204 /* SnackViewController.swift */,
 				0EC6AA2E298F527B007AF204 /* Main.storyboard */,
 				0EC6AA31298F527E007AF204 /* Assets.xcassets */,
 				0EC6AA33298F527E007AF204 /* LaunchScreen.storyboard */,
@@ -123,6 +134,7 @@
 			children = (
 				0EC6AA49298F527F007AF204 /* Project_1UITests.swift */,
 				0EC6AA4B298F527F007AF204 /* Project_1UITestsLaunchTests.swift */,
+				0EC6AAA329900025007AF204 /* SpeedyGozo.jpeg */,
 			);
 			path = "Project 1UITests";
 			sourceTree = "<group>";
@@ -248,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EC6AAA429900025007AF204 /* SpeedyGozo.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EC6AA2D298F527B007AF204 /* ViewController.swift in Sources */,
+				0EC6AAAA29900547007AF204 /* FastViewController.swift in Sources */,
 				0EC6AA29298F527B007AF204 /* AppDelegate.swift in Sources */,
+				0EC6AAA7299001B7007AF204 /* FromViewController.swift in Sources */,
 				0EC6AA2B298F527B007AF204 /* SceneDelegate.swift in Sources */,
+				0EC6AAB029900B96007AF204 /* SnackViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
